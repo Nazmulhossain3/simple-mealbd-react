@@ -1,0 +1,11 @@
+.meals-container{
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    background-color: antiquewhite;
+}
+.single-meal{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    padding: 30px;
+    gap: 8px;
+}
