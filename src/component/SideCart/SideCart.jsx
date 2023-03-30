@@ -1,10 +1,18 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 
-const SideCart = () => {
-    
-    return (
+
+const SideCart = ({showMeal}) => {
+    console.log(showMeal)
+  
+   
+ 
+   
+   
+   return (
         <div>
-            
+         {
+            showMeal.map(meal => <div key={meal.idMeal}> name : {meal.strMeal}</div>)
+         }   
         </div>
     );
 };
