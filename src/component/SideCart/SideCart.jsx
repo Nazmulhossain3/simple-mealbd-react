@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import './SideCart.css'
 
 
 const SideCart = ({showMeal}) => {
@@ -9,9 +10,12 @@ const SideCart = ({showMeal}) => {
    
    
    return (
-        <div>
+        <div className='show-side-cart'>
          {
-            showMeal.map(meal => <div key={meal.idMeal}> name : {meal.strMeal}</div>)
+            showMeal.map(meal => <div key={meal.idMeal}>
+                 Name : {meal.strMeal}
+                 Area : {meal.strArea}
+            </div>)
          }   
         </div>
     );

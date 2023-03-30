@@ -14,7 +14,7 @@ const Meal = ({meal,handleShowName}) => {
           <h6>Area : {strArea}</h6>
          </div>
 
-        <button className='btn btn-info' onClick={()=>handleShowName({meal}.meal)}>Show Name</button>
+        <button className='btn btn-info' onClick={(e)=>handleShowName({meal}.meal,e)}>Show Name</button>
 
         </div>
     
